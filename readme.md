@@ -8,4 +8,5 @@ g++ fileName.cpp -o exeName
 ./exeName
 ```
 # Algorithms
-1. [binary search](binary_search.cpp)
+1. [binary search(loop method)](binary_search_loop.cpp)
+2. [binary search(recursion method)](binary_search_recursion.cpp)

@@ -4,7 +4,7 @@ using namespace std;
 int main(){
     int n = 5;
     int a[n] = {23, 24, 83, 103, 123}; // array should be sorted
-    int searchTerm = 123;
+    int searchTerm = 122;
     int start=0, end = n-1, middle;
 
     while(start<=end){
