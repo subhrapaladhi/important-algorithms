@@ -14,6 +14,7 @@ class node{
         }
 
         node* insert(node*, int);
+        void search(node*, int);
         void inorderTraversal(node*);
 };
 
@@ -27,12 +28,15 @@ int main(){
     bst.insert(root,1);
     bst.insert(root,3);
 
-    bst.inorderTraversal(root);
+    // bst.inorderTraversal(root);
+    int searchTerm;
+    cin>>searchTerm;
+    bst.search(root, searchTerm);
     return 0;
 }
 
 node* node::insert(node* root, int data){
-    cout<<"root = "<<root<<endl;
+    // cout<<"root = "<<root<<endl;
     if(!root){          // first node creation
         root = new node(data);
     }
@@ -52,4 +56,15 @@ void node::inorderTraversal(node *root){
     inorderTraversal(root->left);
     cout<<"data = "<<root->data<<endl;
     inorderTraversal(root->right);
+}
+
+void node::search(node *root, int searchTerm){
+    if(root == NULL)
+        cout<<"not found"<<endl;
+    else if(root->data == searchTerm)
+        cout<<"found"<<endl;
+    else if(root->data < searchTerm)
+        search(root->right, searchTerm);
+    else if(root->data > searchTerm)
+        search(root->left, searchTerm);
 }
