@@ -4,3 +4,5 @@ insertion_sort
 binary_search_tree
 temp.cpp
 temp
+nextLargestPermutation
+nextSmallestPermutation

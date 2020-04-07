@@ -12,3 +12,5 @@ g++ fileName.cpp -o exeName
 2. [binary search(recursion method)](binary_search_recursion.cpp)
 3. [insertion sort](insertion_sort.cpp)
 4. [binary search tree](binary_search_tree.cpp)
+3. [Next largest permutation](nextLargestPermutation.cpp)
+4. [Next smallest permutation](nextSmallestPermutation.cpp)
