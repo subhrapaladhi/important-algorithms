@@ -14,3 +14,4 @@ g++ fileName.cpp -o exeName
 4. [binary search tree](bst.cpp)
 3. [Next largest permutation](nextLargestPermutation.cpp)
 4. [Next smallest permutation](nextSmallestPermutation.cpp)
+5. [Heap Sort](heapSort.cpp)
