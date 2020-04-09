@@ -15,3 +15,4 @@ g++ fileName.cpp -o exeName
 3. [Next largest permutation](nextLargestPermutation.cpp)
 4. [Next smallest permutation](nextSmallestPermutation.cpp)
 5. [Heap Sort](heapSort.cpp)
+6. [2-way Merge Sort](2-way-mergeSort.cpp)
