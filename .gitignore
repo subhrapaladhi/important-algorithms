@@ -7,4 +7,4 @@ temp
 nextLargestPermutation
 nextSmallestPermutation
 heapSort
-2-way-mergeSort
+mergeSort
