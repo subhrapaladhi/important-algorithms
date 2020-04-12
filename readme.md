@@ -16,3 +16,4 @@ g++ fileName.cpp -o exeName
 4. [Next smallest permutation](nextSmallestPermutation.cpp)
 5. [Heap Sort](heapSort.cpp)
 6. [Merge Sort](mergeSort.cpp)
+7. [Quick Sort](quickSort.cpp)

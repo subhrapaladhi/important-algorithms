@@ -8,3 +8,4 @@ nextLargestPermutation
 nextSmallestPermutation
 heapSort
 mergeSort
+quickSort
