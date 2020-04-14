@@ -17,3 +17,4 @@ g++ fileName.cpp -o exeName
 5. [Heap Sort](heapSort.cpp)
 6. [Merge Sort](mergeSort.cpp)
 7. [Quick Sort](quickSort.cpp)
+8. [Knapsack's Problem using greedy method](knapsackProblem_GreedyMethod.cpp)

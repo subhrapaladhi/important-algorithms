@@ -9,3 +9,4 @@ nextSmallestPermutation
 heapSort
 mergeSort
 quickSort
+knapsackProblem_GreedyMethod
