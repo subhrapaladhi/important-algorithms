@@ -15,23 +15,7 @@ class Node{
 
 Node* addNode(Node*, int);
 void inOrderTraversal(Node*);
-
-void levelOrderSearch(Node *root){
-    if(root==nullptr)
-        return;
-    queue<Node*> q;
-    q.push(root);
-
-    while(!q.empty()){
-        Node *current = q.front();
-        q.pop();
-        cout<<current->data<<endl;
-        if(current->left != nullptr)
-            q.push(current->left);
-        if(current->right != nullptr)
-                q.push(current->right);
-    }
-}
+void levelOrderTraversal(Node*);
 
 int main(){
     Node *root = nullptr;
@@ -47,8 +31,28 @@ int main(){
 
     inOrderTraversal(root);
     cout<<endl<<endl;
-    levelOrderSearch(root);
+    levelOrderTraversal(root);
     return 0;
+}
+
+void levelOrderTraversal(Node *root){
+    if(root == nullptr)
+        return ;
+    
+    queue<Node*> q;
+    q.push(root);
+
+    while(!q.empty()){
+        Node *current = q.front();
+        q.pop();
+        cout<<current->data<<endl;
+        
+        if(current->left != nullptr)
+            q.push(current->left);
+        if(current->right != nullptr)
+            q.push(current->right);
+    }
+
 }
 
 Node* addNode(Node *root, int data){
@@ -66,7 +70,6 @@ Node* addNode(Node *root, int data){
 
     return root;
 }
-
 
 void inOrderTraversal(Node *root){
     if(root == nullptr)
