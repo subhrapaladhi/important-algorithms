@@ -8,16 +8,31 @@ g++ fileName.cpp -o exeName
 ./exeName
 ```
 # Algorithms
-1. [binary search(loop method)](binary_search_loop.cpp)
-2. [binary search(recursion method)](binary_search_recursion.cpp)
-3. [insertion sort](insertion_sort.cpp)
-4. [binary search tree](bst.cpp)
-3. [Next largest permutation](nextLargestPermutation.cpp)
-4. [Next smallest permutation](nextSmallestPermutation.cpp)
-5. [Heap Sort](heapSort.cpp)
-6. [Merge Sort](mergeSort.cpp)
-7. [Quick Sort](quickSort.cpp)
-8. [Knapsack's Problem using greedy method](knapsackProblem_GreedyMethod.cpp)
-9. [Reverse a linked list](reverseLinkedList.cpp)
-10. [Floyd's cycle detection algorithm](floyds-cycle-finding-algo.cpp)
-11. [Algorithm to find the merge node of two linked list](find-merge-point.cpp)
+
+## Searching
+
+01. [binary search(loop method)](./Search/binary_search_loop.cpp)
+02. [binary search(recursion method)](./Search/binary_search_recursion.cpp)
+
+## Sorting
+
+01. [insertion sort](./Sorting/insertion_sort.cpp)
+02. [Heap Sort](./Sorting/heapSort.cpp)
+03. [Merge Sort](./Sorting/mergeSort.cpp)
+04. [Quick Sort](./Sorting/quickSort.cpp)
+
+## Linked list
+01. [Linked list creation](./Linked-list/linked-list-creation.cpp)
+02. [Reverse a linked list](./Linked-list/reverseLinkedList.cpp)
+03. [Floyd's cycle detection algorithm](./Linked-list/floyds-cycle-finding-algo.cpp)
+04. [Algorithm to find the merge node of two linked list](./Linked-list/find-merge-point.cpp)
+
+## Trees
+01. [binary search tree](./Trees/bst.cpp)
+02. [Level order Traversal](./Trees/level-order-traversal.cpp)
+
+## Others
+01. [Next largest permutation](./Others/nextLargestPermutation.cpp)
+02. [Next smallest permutation](./Others/nextSmallestPermutation.cpp)
+03. [Knapsack's Problem using greedy method](./Others/knapsackProblem_GreedyMethod.cpp)
+
