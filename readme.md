@@ -35,4 +35,5 @@ g++ fileName.cpp -o exeName
 01. [Next largest permutation](./Others/nextLargestPermutation.cpp)
 02. [Next smallest permutation](./Others/nextSmallestPermutation.cpp)
 03. [Knapsack's Problem using greedy method](./Others/knapsackProblem_GreedyMethod.cpp)
+04. [Job sequencing with deadline by greedy method](./Others/job-sequencing-with-deadline-greedy.cpp)
 
