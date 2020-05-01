@@ -28,8 +28,11 @@ g++ fileName.cpp -o exeName
 04. [Algorithm to find the merge node of two linked list](./Linked-list/find-merge-point.cpp)
 
 ## Trees
-01. [binary search tree](./Trees/bst.cpp)
-02. [Level order Traversal](./Trees/level-order-traversal.cpp)
+01. [height of BT](./Trees/height_of_tree.cpp) 
+02. [binary search tree](./Trees/bst.cpp)
+03. [Level order Traversal](./Trees/level-order-traversal.cpp)
+04. [Check if BT is BST](./Trees/checkBST.cpp)
+ 
 
 ## Others
 01. [Next largest permutation](./Others/nextLargestPermutation.cpp)
