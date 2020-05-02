@@ -32,6 +32,7 @@ g++ fileName.cpp -o exeName
 02. [binary search tree](./Trees/bst.cpp)
 03. [Level order Traversal](./Trees/level-order-traversal.cpp)
 04. [Check if BT is BST](./Trees/checkBST.cpp)
+05. [AVL tree](./Trees/AVL_tree.cpp)
  
 
 ## Others

@@ -48,18 +48,13 @@ int main(){
 }
 
 node* insertNode(int data, node *root){
-    if(!root){  // first node
-        node *firstNode;
-        firstNode = new node(data);
-        return firstNode;
-    }
+    if(!root)  // first node
+        return new node(data);
 
-    else{
-        if(data <= root->showData())
-            root->left = insertNode(data, root->left);
-        else
-            root->right = insertNode(data, root->right);
-    }
+    if(data <= root->showData())
+        root->left = insertNode(data, root->left);
+    else
+        root->right = insertNode(data, root->right);
 
     return root;
 }
