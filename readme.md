@@ -40,4 +40,5 @@ g++ fileName.cpp -o exeName
 02. [Next smallest permutation](./Others/nextSmallestPermutation.cpp)
 03. [Knapsack's Problem using greedy method](./Others/knapsackProblem_GreedyMethod.cpp)
 04. [Job sequencing with deadline by greedy method](./Others/job-sequencing-with-deadline-greedy.cpp)
+05. [Fibonacci series with dynamic programming method](./Others/fibonacci_with_DP.cpp)
 
