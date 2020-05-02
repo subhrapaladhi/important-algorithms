@@ -41,4 +41,5 @@ g++ fileName.cpp -o exeName
 03. [Knapsack's Problem using greedy method](./Others/knapsackProblem_GreedyMethod.cpp)
 04. [Job sequencing with deadline by greedy method](./Others/job-sequencing-with-deadline-greedy.cpp)
 05. [Fibonacci series with dynamic programming method](./Others/fibonacci_with_DP.cpp)
+06. [Number of subsets whose sum is equal to a given number using dynamic programming](./Others/subset_sum_count.cpp)
 
