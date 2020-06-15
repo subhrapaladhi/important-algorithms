@@ -78,7 +78,7 @@ int main(){
     while(n--){
         cin>>q;
         cin>>s;
-        cin.sync();
+        
         if(q==1){
             // insert
             root->insertNode(s,root);
