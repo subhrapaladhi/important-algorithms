@@ -15,6 +15,7 @@ class trieNode{
         void insertNode(string,trieNode*);
         bool searchString(string,trieNode*);
         int count_prefix(string,trieNode*);
+        bool deleteNode(string,trieNode*);
 };
 
 void trieNode::insertNode(string data, trieNode *root){
@@ -56,6 +57,7 @@ int trieNode::count_prefix(string data, trieNode *root){
     for(int i=0; i<data.length(); i++){
         string key = string(1,data[i]);
         trieNode *node = current->children[key];
+        cout<<key<<" = kye :: node = "<<node<<endl;
         if(!node){
             return 0;
         }
@@ -63,6 +65,34 @@ int trieNode::count_prefix(string data, trieNode *root){
     }
 
     return current->count;
+}
+
+bool trieNode::deleteNode(string data, trieNode *root){
+    stack<trieNode*> stk;
+
+    trieNode *current = root;
+    
+    for(int i=0; i<data.length(); i++){
+        string key = string(1,data[i]);
+        trieNode *node = current->children[key];
+        cout<<"key "<<key<<" "<<node<<endl;
+        if(!node){
+            cout<<"false "<<key<<endl;
+            return false;
+        }
+        current = node;
+        stk.push(node);
+        cout<<"top: "<<stk.top()<<endl;
+    }
+
+    while(!stk.empty()){
+        current = stk.top();
+        cout<<current<<endl;
+        stk.pop();
+        current->count--;
+    }
+
+    return true;
 }
 
 int main(){
@@ -95,6 +125,18 @@ int main(){
             // count occurence
             int count = root->count_prefix(s,root);
             cout<<"the number of occurences in the trie: "<<count<<endl;
+        }
+
+        else if(q==4){
+            // delete
+            bool isdelete = root->deleteNode(s,root);
+
+            if(isdelete){
+                cout<<"the string is deleted from the trie "<<isdelete<<endl;
+            } else {
+                cout<<"the string NOT deleted from the trie "<<isdelete<<endl;
+            }
+            
         }
     }
 
