@@ -33,6 +33,11 @@ g++ fileName.cpp -o exeName
 03. [Level order Traversal](./Trees/level-order-traversal.cpp)
 04. [Check if BT is BST](./Trees/checkBST.cpp)
 05. [AVL tree](./Trees/AVL_tree.cpp)
+06. [Heap sort](./Tress/heapSort.cpp)
+07. [Huffman encoding decoding](./Trees/huffman-encoding-decoding.cpp)
+08. [Swaping Kth level](./Trees/swaping-kth-level.cpp)
+09. [Trie](./Trees/trie.cpp)
+10. [Segment tree](./Trees/segmentTrees.cpp)
  
 
 ## Others
@@ -42,3 +47,5 @@ g++ fileName.cpp -o exeName
 04. [Job sequencing with deadline by greedy method](./Others/job-sequencing-with-deadline-greedy.cpp)
 05. [Fibonacci series with dynamic programming method](./Others/fibonacci_with_DP.cpp)
 06. [Count subsets whose sum is equal to a given number using dynamic programming](./Others/subset_sum_count.cpp)
+07. [Balanced Brackets](./Others/balanced_bracket.cpp)
+08. [Queue using stack](./Others/queue_using_stack.cpp)
