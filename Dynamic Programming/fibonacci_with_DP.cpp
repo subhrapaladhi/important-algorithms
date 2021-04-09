@@ -1,29 +1,18 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int printfibonacci(int n, int *values){
-    if(values[n]!=0)
-        return values[n];
-    if(n==1 || n==2){
-        values[n] = 1;
-        return values[n];
-    }
-    else{
-        values[n] = printfibonacci(n-1, values)+printfibonacci(n-2, values);
-        return values[n];
-    }
+vector<int> fib;
+
+int Getfib(int n){
+    if(fib[n] != -1) return fib[n];
+    if(n<=1) return fib[n] = n;
+    return fib[n] = Getfib(n-1) + Getfib(n-2);
 }
 
 
 int main(){
-    // get first n fibonacci numbers
-    int n = 7;
-    int values[n+1] = {0};
-
-    printfibonacci(n, values);
-
-    for(int i=1; i<=n; i++)
-        cout<<values[i]<<endl;
-
+    int n =9;
+    fib = vector<int>(n+1,-1);
+    cout<<Getfib(n);
     return 0;
 }
