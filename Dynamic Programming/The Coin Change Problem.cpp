@@ -5,21 +5,20 @@ using namespace std;
 vector<vector<long>> dp;
 
 long solve(vector<int> &coins, int i, int n){
-    if(i==coins.size()) return n==0 ? 1 : 0;
-    if(n==0 || coins[i]==1) return dp[n][i] = 1;
-    if(dp[n][i]!=-1) return dp[n][i];
+    if(i<0) return n==0 ? 1 : 0;
 
-    int ele = coins[i], mul=0;
-    dp[n][i] = 0;
-    while(mul*ele<n){
-        dp[n][i] += solve(coins, i+1, n-mul*ele);
-        mul++;
-    }
+    if(n<0) return 0;
 
-    return dp[n][i];
+    if(n==0 || coins[i]==1) return 1;
+
+    if(dp[n][i] != -1) return dp[n][i];
+
+    return dp[n][i] = solve(coins, i, n-coins[i]) + solve(coins, i-1, n);
 }
 
 long getWays(int n, vector<int> c){
+    sort(c.begin(), c.end());
+    dp = vector<vector<long>>(n+1, vector<long>(c.size()+1, -1));
     return solve(c, 0, n);
 }
 
@@ -35,10 +34,6 @@ int main(){
         cin>>temp;
         c[i] = temp;
     }
-    
-    sort(c.begin(), c.end(), greater<int>());
-    
-    dp = vector<vector<long>>(n+1, vector<long>(m,-1));
     
     cout<<getWays(n, c);
 
